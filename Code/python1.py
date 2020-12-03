@@ -47,13 +47,13 @@ def one(input1, input2):
 
 	# <QUESTION 2>
 
-    # Return the string that is between the first and last appearance of "bert" in the given string
+	# Return the string that is between the first and last appearance of "bert" in the given string
 	
 	# Return the empty string "" if there is not 2 occurances of "bert" 
 	
 	# IGNORE CASE
-    
-    # <EXAMPLES>
+	
+	# <EXAMPLES>
 
 	# two("bertclivebert") → "clive"
 	# two("xxbertfridgebertyy") → "fridge"
@@ -73,20 +73,20 @@ def two(input):
 		b=a.split("bert")[1].split("bert")[-1]
 		return b
 	else:
-	return ""
+		return ""
 
 
 
 
 	# <QUESTION 3>
 
-    # given a number
+	# given a number
 	# if this number is divisible by 3 return "fizz"
 	# if this number is divisible by 5 return "buzz"
 	# if this number is divisible by both 3 and 5 return "fizzbuzz"
 	# if this number is not divisible by 3 or 5 return "null"
-	    
-    # <EXAMPLES>
+		
+	# <EXAMPLES>
 
 	# three(3) → "fizz"
 	# three(10) → "buzz"
@@ -110,7 +110,7 @@ def three(arg1):
 
 	# <QUESTION 4>
 
-    # Given a string seperate the string into the individual numbers present, then add each digit of each number to get a final value for each number
+	# Given a string seperate the string into the individual numbers present, then add each digit of each number to get a final value for each number
 
 	# String example = "55 72 86"
 	
@@ -120,7 +120,7 @@ def three(arg1):
 	
 	# You then need to return the highest value, in the example above this would be 14.
 	 
-    # <EXAMPLES>
+	# <EXAMPLES>
 
 	# four("55 72 86") → 14
 	# four("15 72 80 164") → 11
@@ -135,23 +135,23 @@ def four(arg1):
 
 	# <QUESTION 5>
 
-    # Given a large string that represents a csv, the structure of each record will be as follows:
-    
-    # owner,nameOfFile,encrypted?,fileSize
-    
-    # "Bert,helloWorld.py,True,1447,Bert,strings.py,False,1318,Jeff,dice.py,False,1445"
-    
-    # For each record, if it is not encrypted, return the names of the owners of the files in a String Array.
-    # Do not include duplicate names.
+	# Given a large string that represents a csv, the structure of each record will be as follows:
+	
+	# owner,nameOfFile,encrypted?,fileSize
+	
+	# "Bert,helloWorld.py,True,1447,Bert,strings.py,False,1318,Jeff,dice.py,False,1445"
+	
+	# For each record, if it is not encrypted, return the names of the owners of the files in a String Array.
+	# Do not include duplicate names.
 	# If all records are encrypted, return an empty Array.
-    
-    # <EXAMPLES>
-    
-    # five("Jeff,random.py,False,1445") → ["Jeff"]
+	
+	# <EXAMPLES>
+	
+	# five("Jeff,random.py,False,1445") → ["Jeff"]
 	# five("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445") → ["Jeff"]
 	# five("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") → ["Bert","Jeff"]
-    # five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") → ["Bert","Jeff"]
-    
+	# five("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") → ["Bert","Jeff"]
+	
 	# <HINT>
 
 	# Dont't forget, False is a String, not a Boolean value in the Tests above.
@@ -171,16 +171,16 @@ def five(input):
 
 	# <QUESTION 6>
 
-    # There is a well known mnemonic which goes "I before E, except after C", which is used to determine which order "ei" or "ie" should be in a word.
-    
-    # Write a function which returns the boolean True if a string follows the mnemonic, and returns the boolean False if not.
+	# There is a well known mnemonic which goes "I before E, except after C", which is used to determine which order "ei" or "ie" should be in a word.
+	
+	# Write a function which returns the boolean True if a string follows the mnemonic, and returns the boolean False if not.
 
 	# <EXAMPLES>
 
-    # six("ceiling") → True
-    # six("believe") → True
-    # six("glacier") → False
-    # six("height") → False
+	# six("ceiling") → True
+	# six("believe") → True
+	# six("glacier") → False
+	# six("height") → False
 
 	# <HINT>
 
@@ -188,25 +188,25 @@ def five(input):
 
 
 def six(input):
-    if "ei" in input:
-        if "cei" in input:
-            return True
-        else:
-            return False
-    elif "cie" in input:
-        return False
-    else:
-        return True
+	if "ei" in input:
+		if "cei" in input:
+			return True
+		else:
+			return False
+	elif "cie" in input:
+		return False
+	else:
+		return True
 
 	# <QUESTION 7>
 
-    # Write a function which returns the integer number of vowels in a given string. 
-    # You should ignore case.
+	# Write a function which returns the integer number of vowels in a given string. 
+	# You should ignore case.
 
 	# <EXAMPLES>
 
-    # seven("Hello") → 2
-    # seven("hEelLoooO") → 6
+	# seven("Hello") → 2
+	# seven("hEelLoooO") → 6
 
 	# <HINTS>
 
@@ -214,13 +214,13 @@ def six(input):
 
 def seven(input):
 	a=input.lower()
-    b=a.count("e")
-    c=a.count("a")
-    d=a.count("i")
-    e=a.count("o")
-    f=a.count("u")
-    g=b+c+d+e+f
-    return g
+	b=a.count("e")
+	c=a.count("a")
+	d=a.count("i")
+	e=a.count("o")
+	f=a.count("u")
+	g=b+c+d+e+f
+	return g
 
 	# <QUESTION 8>
 
@@ -239,20 +239,20 @@ def seven(input):
 
 def eight(input):
 	a=input
-    for i in range (1,input):
-        a*=i
-    return a
-	return 1
+	for i in range (1,input):
+		a*=i
+	return a
+
 
 	# <QUESTION 9>
 
-    # Given a string and a char, returns the position in the String where the char first appears.
-    # Ensure the positions are numbered correctly, please refer to the examples for guidance.
-    # DO NOT ignore case
-    # IGNORE whitespace
-    # If the char does not occur, return the number -1.
-    
-    # <EXAMPLES>
+	# Given a string and a char, returns the position in the String where the char first appears.
+	# Ensure the positions are numbered correctly, please refer to the examples for guidance.
+	# DO NOT ignore case
+	# IGNORE whitespace
+	# If the char does not occur, return the number -1.
+	
+	# <EXAMPLES>
 
 	# nine("This is a Sentence","s") → 4
 	# nine("This is a Sentence","S") → 8
@@ -267,12 +267,12 @@ def nine(inputString, char):
 
 	# <QUESTION 10>
 
-    # Given a string, int and a char, return a boolean value if the 'nth' 
-    # (represented by the int provided) char of the String supplied is the same as the char supplied.
-    # The int provided will NOT always be less than than the length of the String.
-    # IGNORE case and Whitespace. 
-    
-    # <EXAMPLES>
+	# Given a string, int and a char, return a boolean value if the 'nth' 
+	# (represented by the int provided) char of the String supplied is the same as the char supplied.
+	# The int provided will NOT always be less than than the length of the String.
+	# IGNORE case and Whitespace. 
+	
+	# <EXAMPLES>
 
 	# ten("The",2,'h') → True
 	# ten("AAbb",1,'b') → False
