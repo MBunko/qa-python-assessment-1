@@ -69,7 +69,7 @@ def one(input1, input2):
 
 def two(input):
 	a=input.lower()
-	if a.count("bert"):
+	if a.count("bert")>1:
 		b=a.split("bert")[1].split("bert")[-1]
 		return b
 	else:
